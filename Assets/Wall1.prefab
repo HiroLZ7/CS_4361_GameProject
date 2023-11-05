@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6087657237302753399}
   - component: {fileID: 4698780830376948373}
   - component: {fileID: 3015750529719180268}
-  - component: {fileID: 407176705402852341}
   m_Layer: 0
   m_Name: BarU
   m_TagString: Untagged
@@ -134,27 +133,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &407176705402852341
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2532257596964781875}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4863004609963460893
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,7 +146,6 @@ GameObject:
   - component: {fileID: 7020526276328845658}
   - component: {fileID: 3854073997708554943}
   - component: {fileID: 2145021638160772499}
-  - component: {fileID: 9001631680186930298}
   - component: {fileID: 3504674077748468979}
   m_Layer: 0
   m_Name: BarR
@@ -290,27 +267,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &9001631680186930298
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4863004609963460893}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!138 &3504674077748468979
 FixedJoint:
   m_ObjectHideFlags: 0
@@ -374,7 +330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wall: {fileID: 5220343749585371873}
-  speed: 3
+  speed: 5
   zBound: -2
 --- !u!1 &5513549709979996113
 GameObject:
@@ -389,7 +345,6 @@ GameObject:
   - component: {fileID: 3472719438766563677}
   - component: {fileID: 1376672900191401670}
   - component: {fileID: 5711397419427903885}
-  - component: {fileID: 1165879244421524155}
   - component: {fileID: 4470214744626559933}
   m_Layer: 0
   m_Name: BarL
@@ -511,27 +466,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1165879244421524155
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5513549709979996113}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!138 &4470214744626559933
 FixedJoint:
   m_ObjectHideFlags: 0

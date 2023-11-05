@@ -10,8 +10,12 @@ public class WallSpawner : MonoBehaviour
     [SerializeField] private GameObject Wall2;
     [SerializeField] private GameObject Wall3;
     [SerializeField] private GameObject Wall4;
+    [SerializeField] private GameObject Wall5;
     [SerializeField] private float spawnDelay;
     private int spawnCount = 1;
+    
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +37,9 @@ public class WallSpawner : MonoBehaviour
             }
             else if(spawnCount == 4){
                 Spawn4();
+            }
+            else if (spawnCount == 5){
+                Spawn5();
             }
 
     }
@@ -59,8 +66,18 @@ public class WallSpawner : MonoBehaviour
     {
         nextSpawnTime = Time.time + spawnDelay;
         Instantiate(Wall4, transform.position, transform.rotation);
+        spawnCount++;
+    }
+    private void Spawn5()
+    {
+        nextSpawnTime = Time.time + spawnDelay;
+        Instantiate(Wall5, transform.position, transform.rotation);
         spawnCount=1;
-        spawnDelay--;
+
+        if (spawnDelay > 1)
+        {
+            spawnDelay--;
+        }
     }
 
     private bool ShouldSpawn()

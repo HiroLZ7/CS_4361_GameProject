@@ -5,7 +5,7 @@ using UnityEngine;
 public class WallMove : MonoBehaviour
 {
     [SerializeField] private GameObject wall;
-    [SerializeField] private float speed;
+    private float speed;
     public float zBound;
 
     // Start is called before the first frame update
@@ -26,6 +26,7 @@ public class WallMove : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
 
     //ToDo
     // 1) Rebuld wall to have hole. I am sure we can make a person shape if we wanted. -I am thinking three cubes snapped together - perhaps a few walls each with smaller and smaller holes. (i bet that could be scripted.)
