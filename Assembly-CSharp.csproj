@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{798CA8AD-CB9F-BF5E-38B2-D8B6C607F328}</ProjectGuid>
+    <ProjectGuid>{969F02B9-40F8-58BE-D250-96B37E3EBA74}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -60,6 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\WallMove.cs" />
+    <Compile Include="Assets\WallSpawner.cs" />
     <Compile Include="Assets\PlayerMove.cs" />
   </ItemGroup>
   <ItemGroup>

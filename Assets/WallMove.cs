@@ -5,8 +5,8 @@ using UnityEngine;
 public class WallMove : MonoBehaviour
 {
     [SerializeField] private GameObject wall;
-    [SerializeField] private float speed = 5.0f;
-    public Transform target;
+    [SerializeField] private float speed;
+    public float zBound;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +18,13 @@ public class WallMove : MonoBehaviour
     void Update()
     {
         //public static Vector3 MoveTowards(Vector3 current, Vector3 target, float maxDistanceDelta); 
-        transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
+        //transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
+        //GetComponent<Rigidbody>().AddForce(new Vector3(0, 0, -speed));
+        transform.Translate(Vector3.back * speed * Time.deltaTime);
+        if (transform.position.z < zBound)
+        {
+            Destroy(gameObject);
+        }
     }
 
     //ToDo
