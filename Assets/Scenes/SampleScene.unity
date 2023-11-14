@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1089,11 +1089,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47e31f56cdcc1434bab9d6a6530afb3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Wall1: {fileID: 5220343749585371873, guid: 460da473764a57c47bf7908231c2909d, type: 3}
-  Wall2: {fileID: 3644593781479651339, guid: 622cc793239b07d4a8dcbcb3bd97853d, type: 3}
-  Wall3: {fileID: 1917196233800326853, guid: c3ee92a9a3b0353449931221d5d53ff8, type: 3}
-  Wall4: {fileID: 2124299917937977764, guid: 0905afe56478cf741b2e83b92341b620, type: 3}
   spawnDelay: 5
+  walls:
+  - {fileID: 5220343749585371873, guid: 460da473764a57c47bf7908231c2909d, type: 3}
+  - {fileID: 3644593781479651339, guid: 622cc793239b07d4a8dcbcb3bd97853d, type: 3}
+  - {fileID: 1917196233800326853, guid: c3ee92a9a3b0353449931221d5d53ff8, type: 3}
+  - {fileID: 2124299917937977764, guid: 0905afe56478cf741b2e83b92341b620, type: 3}
 --- !u!4 &2089757817
 Transform:
   m_ObjectHideFlags: 0
