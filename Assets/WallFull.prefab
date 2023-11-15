@@ -147,5 +147,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wall: {fileID: 2523891873967383304}
-  speed: 2
-  target: {fileID: 0}
+  speed: 5
+  zBound: 0

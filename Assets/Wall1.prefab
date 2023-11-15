@@ -374,7 +374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wall: {fileID: 5220343749585371873}
-  speed: 3
+  speed: 5
   zBound: -2
 --- !u!1 &5513549709979996113
 GameObject:

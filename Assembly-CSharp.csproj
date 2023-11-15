@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/WallMove.cs" />
+    <Compile Include="Assets/Globals.cs" />
     <Compile Include="Assets/WallSpawner.cs" />
     <Compile Include="Assets/PlayerMove.cs" />
   </ItemGroup>

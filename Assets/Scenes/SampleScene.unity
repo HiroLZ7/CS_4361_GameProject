@@ -1089,7 +1089,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47e31f56cdcc1434bab9d6a6530afb3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnDelay: 5
+  spawnDelay: 10
+  initSpawn: 10
   walls:
   - {fileID: 5220343749585371873, guid: 460da473764a57c47bf7908231c2909d, type: 3}
   - {fileID: 3644593781479651339, guid: 622cc793239b07d4a8dcbcb3bd97853d, type: 3}

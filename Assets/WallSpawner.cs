@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,7 +12,7 @@ public class WallSpawner : MonoBehaviour
     // [SerializeField] private GameObject Wall3;
     // [SerializeField] private GameObject Wall4;
     [SerializeField] private float spawnDelay;
-
+    [SerializeField] private float initSpawn = 10f;
     [SerializeField] private List<GameObject> walls;
     [SerializeField] private Queue<GameObject> wallOrder;
     
@@ -20,13 +21,13 @@ public class WallSpawner : MonoBehaviour
     void Start()
     {
         wallOrder = new();
-        int rand = Random.Range(0,walls.Count);
+        int rand = UnityEngine.Random.Range(0,walls.Count);
         wallOrder.Enqueue(walls[rand]);
-        rand = Random.Range(0,walls.Count);
+        rand = UnityEngine.Random.Range(0,walls.Count);
         wallOrder.Enqueue(walls[rand]);
-        rand = Random.Range(0,walls.Count);
+        rand = UnityEngine.Random.Range(0,walls.Count);
         wallOrder.Enqueue(walls[rand]);
-        rand = Random.Range(0,walls.Count);
+        rand = UnityEngine.Random.Range(0,walls.Count);
         wallOrder.Enqueue(walls[rand]);
         
     }
@@ -35,10 +36,10 @@ public class WallSpawner : MonoBehaviour
     void Update()
     {
         if (ShouldSpawn()){
-            nextSpawnTime = Time.time + spawnDelay;
-            
+            nextSpawnTime = Time.time + Math.Max(1,spawnDelay * 1/Globals.speed);
+            Globals.speed += .01f;
             Instantiate(wallOrder.Dequeue(), transform.position, transform.rotation);
-            int rand = Random.Range(0,walls.Count);
+            int rand = UnityEngine.Random.Range(0,walls.Count);
             wallOrder.Enqueue(walls[rand]);
         }
             

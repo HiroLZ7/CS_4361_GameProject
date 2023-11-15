@@ -11,7 +11,7 @@ public class WallMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        speed = Globals.speed;
     }
 
     // Update is called once per frame
@@ -21,6 +21,7 @@ public class WallMove : MonoBehaviour
         //transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
         //GetComponent<Rigidbody>().AddForce(new Vector3(0, 0, -speed));
         transform.Translate(Vector3.back * speed * Time.deltaTime);
+        
         if (transform.position.z < zBound)
         {
             Destroy(gameObject);
