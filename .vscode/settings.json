@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "CS4361_Project.sln"
+    "dotnet.defaultSolution": "CS_4361_GameProject2.sln"
 }
